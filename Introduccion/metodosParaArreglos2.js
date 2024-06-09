@@ -31,3 +31,32 @@ const nombres = ['Carlos', 'Rafael', 'Estefania', 'Rodrigo', 'Rafael', 'Gema', '
 // 	}
 // });
 // console.log(resultado);
+
+/* 
+	📌 .map()
+	Nos permite ejecutar una función por cada elemento y crear un nuevo arreglo
+	en base a los resultados de esa función.
+*/
+
+//  const nombresMayus = nombres.map( (nombre) => {
+//  	return nombre.toUpperCase();
+//  });
+//  
+//  const nombresMayusculas = nombres.map((nombre) => nombre.toUpperCase());
+//  
+// const nombresMayusConR = nombres.map((nombre) => {
+// 	if (nombre[0] === 'R'){
+// 		return nombre.toUpperCase();
+// 	}
+// })
+// 
+// nombresMayusConR.forEach((nombre) => nombre != undefined ? console.log(nombre) : '');
+
+/* 📌 .filter()
+	Nos permite ejecutar una función por cada elemento 
+	y luego crear un arreglo en base a los resultados de esa función. 
+	La diferencia entre .map y .filter es que .map te crea una lista nueva con el resultado de la funcion aplicada a cada elemento y .filter se usa para crear una lista nueva
+	con los elementos que cumplan el criterio de la función indicada. (con .map, si no cumple el requisito, igual te lo añade a la lista como undefined.)
+*/
+
+const nombresConR = nombres.filter((nombre) => nombre[0] == 'R' ? console.log(nombre) : '');
